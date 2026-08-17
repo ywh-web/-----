@@ -46,7 +46,7 @@ h2 { margin: 16px 0 18px; font-size: clamp(30px, 4vw, 54px); line-height: 1.2; l
 .button-light { background: #f7f0e3; color: #681c1c; }
 .hero { min-height: 690px; position: relative; display: flex; align-items: center; color: #f7f0e3; overflow: hidden; }
 .hero-image, .hero-overlay { position: absolute; inset: 0; }
-.hero-image { background: url('/assets/chaozhou-1.png') center 39% / cover no-repeat; transform: scale(1.02); }
+.hero-image { background: url('/assets/chaozhou-1.webp') center 39% / cover no-repeat; transform: scale(1.02); }
 .hero-overlay { background: linear-gradient(90deg, rgba(39,15,14,.84) 0%, rgba(55,22,17,.54) 50%, rgba(33,26,23,.15) 100%), linear-gradient(0deg, rgba(33,26,23,.45), transparent 40%); }
 .hero-ip-characters { position: absolute; right: 3%; bottom: 18px; width: min(50vw, 700px); height: min(80%, 540px); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: end; gap: clamp(8px, 1vw, 16px); opacity: .98; pointer-events: none; }
 .hero-ip { width: 100%; height: 100%; min-width: 0; object-fit: contain; object-position: bottom center; filter: drop-shadow(0 14px 10px rgba(33,26,23,.25)); }

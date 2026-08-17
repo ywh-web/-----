@@ -15,9 +15,9 @@ export const modules = [
 ]
 
 export const ipCharacters = [
-  { name: '瓷嘟嘟', role: '嵌瓷文化 IP 形象', description: '以花卉、彩瓷与潮州传统装饰色彩为视觉关键词，呈现嵌瓷文创的亲和力。', position: 'left', image: '/assets/ip-hero-left.png' },
-  { name: '瓷谦谦', role: '嵌瓷文化 IP 形象', description: '以传统人物服饰、祥云纹样与屋脊色彩为视觉关键词，连接工艺与当代表达。', position: 'center', image: '/assets/ip-hero-center-clean.png' },
-  { name: '嵌小瓷', role: '嵌瓷文化 IP 形象', description: '融合龙凤、彩旗与守护意象，作为嵌瓷文化走进文创和数字场景的视觉角色。', position: 'right', image: '/assets/ip-hero-right-user.png' },
+  { name: '瓷嘟嘟', role: '嵌瓷文化 IP 形象', description: '以花卉、彩瓷与潮州传统装饰色彩为视觉关键词，呈现嵌瓷文创的亲和力。', position: 'left', image: '/assets/ip-hero-left.webp' },
+  { name: '瓷谦谦', role: '嵌瓷文化 IP 形象', description: '以传统人物服饰、祥云纹样与屋脊色彩为视觉关键词，连接工艺与当代表达。', position: 'center', image: '/assets/ip-hero-center-clean.webp' },
+  { name: '嵌小瓷', role: '嵌瓷文化 IP 形象', description: '融合龙凤、彩旗与守护意象，作为嵌瓷文化走进文创和数字场景的视觉角色。', position: 'right', image: '/assets/ip-hero-right-user.webp' },
 ]
 
 export const businessModes = [
@@ -26,16 +26,16 @@ export const businessModes = [
 ]
 
 export const works = [
-  { id: 'CY-001', title: '双龙献瑞', creator: '共创嵌瓷作品', year: '2024', meaning: '双龙守护、祥瑞相逢，寓意家族精神在代际之间延续。', image: '/assets/chaozhou-2.png', pattern: ['#2f78a8', '#e8c878', '#a62b24'] },
-  { id: 'CY-002', title: '百花朝凤', creator: '共创嵌瓷作品', year: '2024', meaning: '百花竞放、凤鸟来仪，象征不同生命经验的相遇与共创。', image: '/assets/chaozhou-4.png', pattern: ['#a62b24', '#2c8c78', '#f4d2a6'] },
-  { id: 'CY-003', title: '人物守望', creator: '共创嵌瓷作品', year: '2024', meaning: '人物塑像承载地方记忆，也让年轻人看见传统工艺的温度。', image: '/assets/chaozhou-3.png', pattern: ['#c9963e', '#2f78a8', '#681c1c'] },
+  { id: 'CY-001', title: '双龙献瑞', creator: '共创嵌瓷作品', year: '2024', meaning: '双龙守护、祥瑞相逢，寓意家族精神在代际之间延续。', image: '/assets/chaozhou-2.webp', pattern: ['#2f78a8', '#e8c878', '#a62b24'] },
+  { id: 'CY-002', title: '百花朝凤', creator: '共创嵌瓷作品', year: '2024', meaning: '百花竞放、凤鸟来仪，象征不同生命经验的相遇与共创。', image: '/assets/chaozhou-4.webp', pattern: ['#a62b24', '#2c8c78', '#f4d2a6'] },
+  { id: 'CY-003', title: '人物守望', creator: '共创嵌瓷作品', year: '2024', meaning: '人物塑像承载地方记忆，也让年轻人看见传统工艺的温度。', image: '/assets/chaozhou-3.webp', pattern: ['#c9963e', '#2f78a8', '#681c1c'] },
 ]
 
 export const storyTimeline = [
-  { year: '源起', title: '屋脊上的立体史书', text: '龙、凤、花鸟与人物被安放在潮州古建筑的屋脊之上，嵌瓷以鲜明色彩讲述地方文化。', image: '/assets/chaozhou-1.png' },
-  { year: '现场', title: '一片瓷，如何成为一件作品', text: '传统工艺依赖经验、想象与手上功夫。师带徒的传承方式，让工艺在真实的共同劳动中被理解。', image: '/assets/chaozhou-6.png' },
-  { year: '当下', title: '让青年进入故事现场', text: '数字化代际共创，把匠人的经验、青年人的表达与地方文化资源放在同一个创作现场。', image: '/assets/chaozhou-5.png' },
-  { year: '未来', title: '从被动保护到价值创造', text: '记录、展示、确权与传播并行，让非遗既被看见，也在现代生活中继续生长。', image: '/assets/chaozhou-7.png' },
+  { year: '源起', title: '屋脊上的立体史书', text: '龙、凤、花鸟与人物被安放在潮州古建筑的屋脊之上，嵌瓷以鲜明色彩讲述地方文化。', image: '/assets/chaozhou-1.webp' },
+  { year: '现场', title: '一片瓷，如何成为一件作品', text: '传统工艺依赖经验、想象与手上功夫。师带徒的传承方式，让工艺在真实的共同劳动中被理解。', image: '/assets/chaozhou-6.webp' },
+  { year: '当下', title: '让青年进入故事现场', text: '数字化代际共创，把匠人的经验、青年人的表达与地方文化资源放在同一个创作现场。', image: '/assets/chaozhou-5.webp' },
+  { year: '未来', title: '从被动保护到价值创造', text: '记录、展示、确权与传播并行，让非遗既被看见，也在现代生活中继续生长。', image: '/assets/chaozhou-7.webp' },
 ]
 
 export const teamRoles = [
