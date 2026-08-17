@@ -15,9 +15,9 @@ export const modules = [
 ]
 
 export const ipCharacters = [
-  { name: '瓷嘟嘟', role: '嵌瓷文化 IP 形象', description: '以花卉、彩瓷与潮州传统装饰色彩为视觉关键词，呈现嵌瓷文创的亲和力。', position: 'left' },
-  { name: '瓷谦谦', role: '嵌瓷文化 IP 形象', description: '以传统人物服饰、祥云纹样与屋脊色彩为视觉关键词，连接工艺与当代表达。', position: 'center' },
-  { name: '嵌小瓷', role: '嵌瓷文化 IP 形象', description: '融合龙凤、彩旗与守护意象，作为嵌瓷文化走进文创和数字场景的视觉角色。', position: 'right' },
+  { name: '瓷嘟嘟', role: '嵌瓷文化 IP 形象', description: '以花卉、彩瓷与潮州传统装饰色彩为视觉关键词，呈现嵌瓷文创的亲和力。', position: 'left', image: '/assets/ip-hero-left.png' },
+  { name: '瓷谦谦', role: '嵌瓷文化 IP 形象', description: '以传统人物服饰、祥云纹样与屋脊色彩为视觉关键词，连接工艺与当代表达。', position: 'center', image: '/assets/ip-hero-center-clean.png' },
+  { name: '嵌小瓷', role: '嵌瓷文化 IP 形象', description: '融合龙凤、彩旗与守护意象，作为嵌瓷文化走进文创和数字场景的视觉角色。', position: 'right', image: '/assets/ip-hero-right-user.png' },
 ]
 
 export const businessModes = [

@@ -24,6 +24,22 @@ const teamMembers = [
     <section class="content-expansion alt"><div class="container"><div class="expansion-heading"><span class="eyebrow">PEOPLE BEHIND THE PROJECT</span><h2>成员姓名与具体分工</h2><p>团队以项目制协作，每位成员既有明确岗位，也会在调研、共创、答辩和落地阶段互相支援。</p></div><div class="detail-grid"><article v-for="member in teamMembers" :key="member.name" class="detail-card"><span class="detail-index">{{ member.role }}</span><h3>{{ member.name }}</h3><p><strong>核心能力：</strong>{{ member.skill }}</p><p><strong>关键贡献：</strong>{{ member.contribution }}</p></article></div></div></section>
     <section class="content-expansion alt"><div class="container"><div class="expansion-heading"><span class="eyebrow">TEAM METHOD</span><h2>用跨学科协作，把文化变成完整方案</h2><p>从学生创意到匠人把关，再到技术实现和商业落地，每个成员都在共同项目中承担明确职责。</p></div><div class="detail-grid"><article class="detail-card"><span class="detail-index">01 / 青年团队</span><h3>把新工具带进传统</h3><p>负责内容策划、视觉设计、数据分析、数字产品和用户运营，让非遗以年轻人熟悉的方式被理解。</p></article><article class="detail-card"><span class="detail-index">02 / 匠人顾问</span><h3>守住技艺原真性</h3><p>由嵌瓷传承人提供工艺指导、作品监制、传家宝署名和培训，确保数字表达建立在真实经验上。</p></article><article class="detail-card"><span class="detail-index">03 / 外部网络</span><h3>连接学校与行业</h3><p>联动高校、技术团队、行业协会和政企资源，支持区块链存证、AI、AR、学术研究和市场推广。</p></article></div></div></section>
     <section class="content-expansion"><div class="container"><div class="expansion-heading"><span class="eyebrow">HOW WE WORK</span><h2>从三角领导到矩阵协作</h2></div><div class="detail-flow"><article><b>01 / 识别问题</b><h3>共同定义目标</h3><p>通过调研、走访和数据复盘，把文化需求转为可执行的项目命题。</p></article><article><b>02 / 组建项目组</b><h3>专业精准匹配</h3><p>根据成员专业、性格与状态进行人岗匹配，形成跨部门的动态小组。</p></article><article><b>03 / 队内审阅</b><h3>让创意可落地</h3><p>由工艺、内容、技术和商业成员共同审核，兼顾文化准确性与执行效率。</p></article><article><b>04 / 复盘成长</b><h3>把成果沉淀下来</h3><p>通过 OKR、作品归档与人才档案，把一次活动转为持续的能力和内容资产。</p></article></div></div></section>
-    <section class="ecosystem-section"><div class="container ecosystem"><div class="eco-center"><span>潮韵商城</span><small>数字共创平台</small></div><div class="eco-node node-1">非遗<br />工艺</div><div class="eco-node node-2">校园<br />教育</div><div class="eco-node node-3">数字<br />技术</div><div class="eco-node node-4">社区<br />文旅</div></div></section>
+    <section class="ecosystem-section">
+      <div class="container">
+        <div class="ecosystem-intro">
+          <span class="eyebrow light">ONE PLATFORM / FOUR CONNECTIONS</span>
+          <h2>让每一种力量，在同一个文化现场相遇</h2>
+          <p>潮韵商城以数字共创平台为中心，把工艺、校园、技术与文旅资源连接起来，形成可持续的非遗活化生态。</p>
+        </div>
+        <div class="ecosystem">
+          <div class="eco-center"><span>潮韵商城</span><small>实体 × 数字<br />共创平台</small></div>
+          <div class="eco-node node-1"><b>非遗</b><small>工艺</small><em>传承人 · 工坊 · 档案</em></div>
+          <div class="eco-node node-2"><b>校园</b><small>教育</small><em>研学课程 · 青年创作</em></div>
+          <div class="eco-node node-3"><b>数字</b><small>技术</small><em>AI · AR · 区块链</em></div>
+          <div class="eco-node node-4"><b>社区</b><small>文旅</small><em>古城打卡 · 智慧导览</em></div>
+        </div>
+        <div class="ecosystem-legend"><span>文化内容沉淀</span><span>青年人才参与</span><span>数字能力支撑</span><span>文旅场景转化</span></div>
+      </div>
+    </section>
   </div>
 </template>
