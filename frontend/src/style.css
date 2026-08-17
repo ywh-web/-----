@@ -48,8 +48,8 @@ h2 { margin: 16px 0 18px; font-size: clamp(30px, 4vw, 54px); line-height: 1.2; l
 .hero-image, .hero-overlay { position: absolute; inset: 0; }
 .hero-image { background: url('/assets/chaozhou-1.png') center 39% / cover no-repeat; transform: scale(1.02); }
 .hero-overlay { background: linear-gradient(90deg, rgba(39,15,14,.84) 0%, rgba(55,22,17,.54) 50%, rgba(33,26,23,.15) 100%), linear-gradient(0deg, rgba(33,26,23,.45), transparent 40%); }
-.hero-ip-characters { position: absolute; right: 3%; bottom: 0; width: min(50vw, 670px); height: 91%; display: flex; align-items: flex-end; justify-content: center; gap: 0; opacity: .94; pointer-events: none; }
-.hero-ip { width: 33.333%; height: 100%; background-image: url('/assets/ip-characters.png'); background-repeat: no-repeat; background-size: 300% 100%; background-position-y: bottom; filter: drop-shadow(0 14px 10px rgba(33,26,23,.25)); }
+.hero-ip-characters { position: absolute; right: 4%; bottom: 0; width: min(46vw, 600px); height: 78%; display: flex; align-items: flex-end; justify-content: space-between; gap: 9px; opacity: .95; pointer-events: none; }
+.hero-ip { width: calc((100% - 18px) / 3); height: 100%; background-image: url('/assets/ip-characters.png'); background-repeat: no-repeat; background-size: 300% 100%; background-position-y: bottom; mix-blend-mode: multiply; filter: drop-shadow(0 14px 10px rgba(33,26,23,.25)); }
 .hero-ip-left { background-position-x: left; }.hero-ip-center { background-position-x: center; }.hero-ip-right { background-position-x: right; }
 .hero-content { position: relative; padding: 100px 0; }
 .hero h1 { max-width: 700px; margin: 22px 0; font-size: clamp(48px, 7.2vw, 96px); line-height: 1.05; letter-spacing: -.06em; }
@@ -73,7 +73,7 @@ h2 { margin: 16px 0 18px; font-size: clamp(30px, 4vw, 54px); line-height: 1.2; l
 .ip-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .ip-card { overflow: hidden; background: #f7f0e3; border: 1px solid rgba(166,43,36,.14); transition: transform .25s, box-shadow .25s; }
 .ip-card:hover { transform: translateY(-6px); box-shadow: 8px 10px 0 rgba(201,150,62,.2); }
-.ip-portrait { height: 330px; background-color: #fbfaf7; background-image: url('/assets/ip-characters.png'); background-repeat: no-repeat; background-size: 300% 100%; }
+.ip-portrait { height: 330px; background-color: #f7f0e3; background-image: url('/assets/ip-characters.png'); background-repeat: no-repeat; background-size: 300% 100%; mix-blend-mode: multiply; }
 .ip-left { background-position: left center; }.ip-center { background-position: center center; }.ip-right { background-position: right center; }
 .ip-card-copy { padding: 24px 25px 27px; }.ip-card-copy h3 { margin: 8px 0 9px; color: #681c1c; font-size: 27px; }.ip-card-copy p { min-height: 66px; margin-bottom: 17px; color: #7b665b; font-size: 13px; line-height: 1.8; }.ip-tag { color: #c9963e; font-size: 9px; letter-spacing: .13em; }.ip-source { margin: 25px 0 0; color: #947e70; font-size: 11px; }
 .dark-section { color: #f7f0e3; background: #211a17; }
