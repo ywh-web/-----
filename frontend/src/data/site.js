@@ -14,6 +14,12 @@ export const modules = [
   { index: '03', title: '资产包', english: 'DIGITAL ASSET', text: '绑定唯一数字 ID、时间与作品资料，形成可溯源的数字资产凭证。', icon: '◇' },
 ]
 
+export const ipCharacters = [
+  { name: '瓷嘟嘟', role: '嵌瓷文化 IP 形象', description: '以花卉、彩瓷与潮州传统装饰色彩为视觉关键词，呈现嵌瓷文创的亲和力。', position: 'left' },
+  { name: '瓷谦谦', role: '嵌瓷文化 IP 形象', description: '以传统人物服饰、祥云纹样与屋脊色彩为视觉关键词，连接工艺与当代表达。', position: 'center' },
+  { name: '嵌小瓷', role: '嵌瓷文化 IP 形象', description: '融合龙凤、彩旗与守护意象，作为嵌瓷文化走进文创和数字场景的视觉角色。', position: 'right' },
+]
+
 export const businessModes = [
   { tag: 'B', title: '校园研学', detail: '标准化研学课程包采购', accent: 'blue' }, { tag: 'C', title: '家庭传承', detail: '实体作品 + 数字证书 + DIY 套装', accent: 'green' },
   { tag: 'G', title: '文旅合作', detail: '古城 AR 打卡与数字化配套服务', accent: 'red' }, { tag: 'B2B', title: '品牌授权', detail: '原创纹样版权授权与分成', accent: 'gold' },
