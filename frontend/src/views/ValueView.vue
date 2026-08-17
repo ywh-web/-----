@@ -1,0 +1,8 @@
+<script setup>
+import PageIntro from '../components/PageIntro.vue'
+import SectionHeading from '../components/SectionHeading.vue'
+import { businessModes, surveyBars } from '../data/site'
+</script>
+<template>
+  <div><PageIntro eyebrow="05 / PROJECT VALUE" title="让文化传承，拥有新的价值坐标" intro="非遗 + 科技 + 教育 + 文旅 + 社区，形成可以被复制的协作模式。" image="/assets/chaozhou-5.png"/><section class="section-pad"><div class="container"><SectionHeading eyebrow="THREE VALUES" title="一件传家宝，连接三种未来"/><div class="value-grid"><article><span>01</span><h2>文化传承价值</h2><p>记录嵌瓷工艺与地方文化，让非遗数字化保护不只停留在存档，也进入新的传播场景。</p></article><article><span>02</span><h2>商业盈利价值</h2><p>用实体作品、数字内容与纹样授权组合出更完整的产品价值，让文化资源找到可持续的经营路径。</p></article><article><span>03</span><h2>青年就业与乡村振兴</h2><p>通过师带徒、校园教育与数字创作，创造更多年轻人参与非遗、理解非遗的入口。</p></article></div></div></section><section class="data-section section-pad"><div class="container data-grid"><div><SectionHeading eyebrow="FIELD RESEARCH / 2024" title="我们从 743 份回答出发" text="真实调研反映出人们对亲手参与、文创展示与传承问题的关注。"/><div class="bars"><div v-for="bar in surveyBars" :key="bar.label" class="bar-row"><div><span>{{ bar.label }}</span><b>{{ bar.value }}%</b></div><i><em :style="{ width: `${bar.value}%` }"></em></i></div></div></div><div class="data-poster"><span>65.66%</span><p>潮汕本地居民<br />对嵌瓷了解不足</p><small>数据来自项目调研摘要</small></div></div></section><section class="business-section section-pad"><div class="container"><SectionHeading eyebrow="BUSINESS LOOP" title="四个方向，形成商业闭环"/><div class="business-grid"><article v-for="item in businessModes" :key="item.tag" class="business-card" :class="item.accent"><span class="business-tag">{{ item.tag }}</span><h3>{{ item.title }}</h3><p>{{ item.detail }}</p><span class="business-line"></span></article></div></div></section></div>
+</template>

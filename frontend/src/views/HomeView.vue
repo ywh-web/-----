@@ -1,0 +1,15 @@
+<script setup>
+import { modules, stats, businessModes } from '../data/site'
+import SectionHeading from '../components/SectionHeading.vue'
+import StatStrip from '../components/StatStrip.vue'
+</script>
+
+<template>
+  <div class="home-page">
+    <section class="hero"><div class="hero-image"></div><div class="hero-overlay"></div><div class="container hero-content"><span class="eyebrow light">CHAOYUN MALL / DIGITAL HEIRLOOM</span><h1>让一片瓷，<br /><em>成为一代人的记忆。</em></h1><p>潮州嵌瓷非遗文化的数字化共创平台<br />把一件作品，变成一份可以被记住、被分享、被传承的家族文化资产。</p><div class="hero-actions"><RouterLink class="button button-gold" to="/heirloom">探索传家宝 <span>↗</span></RouterLink><RouterLink class="text-link light" to="/concept">了解数字共创 <span>→</span></RouterLink></div></div><div class="hero-caption">潮州古建筑 · 屋脊上的立体史书</div></section>
+    <section class="intro-section section-pad"><div class="container split-intro"><div><span class="eyebrow">THE IDEA</span><h2>不只是一件工艺品，<br /><span>而是一段家族记忆。</span></h2></div><div class="intro-copy"><p>嵌瓷数字传家宝，以潮州嵌瓷为载体，让匠人的手艺、年轻人的表达与家族的故事在同一件作品里相遇。</p><RouterLink class="text-link" to="/concept">阅读项目理念 <span>→</span></RouterLink></div></div><div class="container"><StatStrip :stats="stats" /></div></section>
+    <section class="dark-section section-pad"><div class="container"><SectionHeading eyebrow="ONE HEIRLOOM, FOUR LAYERS" title="把记忆，装进一件作品" text="实体作品是起点，数字内容让它拥有更长的生命。"/><div class="formula"><span>实体共创嵌瓷作品</span><b>+</b><span>口述史故事包</span><b>+</b><span>AIGC 纹样包</span><b>+</b><span>区块链资产包</span><b>=</b><strong>嵌瓷数字传家宝</strong></div><div class="module-grid"> <article v-for="item in modules" :key="item.index" class="module-card"><div class="module-top"><span>{{ item.index }}</span><i>{{ item.icon }}</i></div><span class="module-english">{{ item.english }}</span><h3>{{ item.title }}</h3><p>{{ item.text }}</p><RouterLink class="card-arrow" to="/heirloom">了解模块 <span>↗</span></RouterLink></article></div></div></section>
+    <section class="business-section section-pad"><div class="container"><SectionHeading eyebrow="ONE MODEL, FOUR DIRECTIONS" title="让传统工艺，进入真实生活" text="B 端做规模，C 端做品牌，G 端做背书，B2B 做长尾。"/><div class="business-grid"><article v-for="item in businessModes" :key="item.tag" class="business-card" :class="item.accent"><span class="business-tag">{{ item.tag }}</span><h3>{{ item.title }}</h3><p>{{ item.detail }}</p><span class="business-line"></span></article></div><RouterLink class="button button-dark" to="/value">查看项目价值 <span>→</span></RouterLink></div></section>
+    <section class="home-story"><div class="container story-teaser"><div><span class="eyebrow light">FROM CRAFT TO CULTURE</span><h2>当年轻人走上屋脊，<br />传统就有了新的方向。</h2><RouterLink class="text-link light" to="/story">走进非遗故事 <span>→</span></RouterLink></div><div class="teaser-image"><img src="/assets/chaozhou-6.png" alt="潮州嵌瓷屋脊上的龙凤与人物" /></div></div></section>
+  </div>
+</template>
