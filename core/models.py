@@ -1,3 +1,31 @@
 from django.db import models
 
-# Create your models here.
+
+class ContactInquiry(models.Model):
+    class CooperationType(models.TextChoices):
+        SCHOOL = 'school', 'B 端校园研学'
+        FAMILY = 'family', 'C 端家庭体验'
+        TOURISM = 'tourism', 'G 端文旅合作'
+        LICENSING = 'licensing', 'B2B 纹样授权'
+
+    class Status(models.TextChoices):
+        PENDING = 'pending', '待处理'
+        CONTACTED = 'contacted', '已联系'
+        CLOSED = 'closed', '已完成'
+
+    name = models.CharField('称呼', max_length=80)
+    contact = models.CharField('联系方式', max_length=160)
+    cooperation_type = models.CharField('合作方向', max_length=20, choices=CooperationType.choices)
+    message = models.TextField('合作留言', blank=True)
+    status = models.CharField('处理状态', max_length=20, choices=Status.choices, default=Status.PENDING)
+    admin_note = models.TextField('管理员备注', blank=True)
+    created_at = models.DateTimeField('提交时间', auto_now_add=True)
+    updated_at = models.DateTimeField('更新时间', auto_now=True)
+
+    class Meta:
+        ordering = ('-created_at',)
+        verbose_name = '合作意向'
+        verbose_name_plural = '合作意向'
+
+    def __str__(self):
+        return f'{self.name} · {self.get_cooperation_type_display()}'

@@ -25,13 +25,14 @@ SECRET_KEY = 'django-insecure-84tl7$##5p8xw0xe(70=$(h=l5amvzw$%k_dgwv7#*il!m0$cw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'testserver']
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'simpleui',
+    'core',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
