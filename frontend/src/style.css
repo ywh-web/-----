@@ -48,8 +48,8 @@ h2 { margin: 16px 0 18px; font-size: clamp(30px, 4vw, 54px); line-height: 1.2; l
 .hero-image, .hero-overlay { position: absolute; inset: 0; }
 .hero-image { background: url('/assets/chaozhou-1.png') center 39% / cover no-repeat; transform: scale(1.02); }
 .hero-overlay { background: linear-gradient(90deg, rgba(39,15,14,.84) 0%, rgba(55,22,17,.54) 50%, rgba(33,26,23,.15) 100%), linear-gradient(0deg, rgba(33,26,23,.45), transparent 40%); }
-.hero-ip-characters { position: absolute; right: 4%; bottom: 0; width: min(46vw, 600px); height: 78%; display: flex; align-items: flex-end; justify-content: space-between; gap: 9px; opacity: .95; pointer-events: none; }
-.hero-ip { width: calc((100% - 18px) / 3); height: 100%; background-image: url('/assets/ip-characters.png'); background-repeat: no-repeat; background-size: 300% 100%; background-position-y: bottom; mix-blend-mode: multiply; filter: drop-shadow(0 14px 10px rgba(33,26,23,.25)); }
+.hero-ip-characters { position: absolute; right: 3%; bottom: 18px; width: min(48vw, 620px); aspect-ratio: 2.4 / 1; display: flex; align-items: flex-end; opacity: .95; pointer-events: none; }
+.hero-ip { width: 33.3333%; height: 100%; background-image: url('/assets/ip-characters.png'); background-repeat: no-repeat; background-size: auto 100%; background-position-y: bottom; mix-blend-mode: multiply; filter: drop-shadow(0 14px 10px rgba(33,26,23,.25)); }
 .hero-ip-left { background-position-x: left; }.hero-ip-center { background-position-x: center; }.hero-ip-right { background-position-x: right; }
 .hero-content { position: relative; padding: 100px 0; }
 .hero h1 { max-width: 700px; margin: 22px 0; font-size: clamp(48px, 7.2vw, 96px); line-height: 1.05; letter-spacing: -.06em; }
