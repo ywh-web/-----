@@ -26,9 +26,9 @@ export const businessModes = [
 ]
 
 export const works = [
-  { id: 'CY-001', title: '双龙献瑞', creator: '共创嵌瓷作品 · Demo', year: '2024', meaning: '双龙守护、祥瑞相逢，寓意家族精神在代际之间延续。', image: '/assets/chaozhou-2.png', pattern: ['#2f78a8', '#e8c878', '#a62b24'] },
-  { id: 'CY-002', title: '百花朝凤', creator: '共创嵌瓷作品 · Demo', year: '2024', meaning: '百花竞放、凤鸟来仪，象征不同生命经验的相遇与共创。', image: '/assets/chaozhou-4.png', pattern: ['#a62b24', '#2c8c78', '#f4d2a6'] },
-  { id: 'CY-003', title: '人物守望', creator: '共创嵌瓷作品 · Demo', year: '2024', meaning: '人物塑像承载地方记忆，也让年轻人看见传统工艺的温度。', image: '/assets/chaozhou-3.png', pattern: ['#c9963e', '#2f78a8', '#681c1c'] },
+  { id: 'CY-001', title: '双龙献瑞', creator: '共创嵌瓷作品', year: '2024', meaning: '双龙守护、祥瑞相逢，寓意家族精神在代际之间延续。', image: '/assets/chaozhou-2.png', pattern: ['#2f78a8', '#e8c878', '#a62b24'] },
+  { id: 'CY-002', title: '百花朝凤', creator: '共创嵌瓷作品', year: '2024', meaning: '百花竞放、凤鸟来仪，象征不同生命经验的相遇与共创。', image: '/assets/chaozhou-4.png', pattern: ['#a62b24', '#2c8c78', '#f4d2a6'] },
+  { id: 'CY-003', title: '人物守望', creator: '共创嵌瓷作品', year: '2024', meaning: '人物塑像承载地方记忆，也让年轻人看见传统工艺的温度。', image: '/assets/chaozhou-3.png', pattern: ['#c9963e', '#2f78a8', '#681c1c'] },
 ]
 
 export const storyTimeline = [
@@ -39,7 +39,7 @@ export const storyTimeline = [
 ]
 
 export const teamRoles = [
-  { title: '跨学科团队', text: '由广工相关专业学生组成的创新实践团队，连接设计、管理、供应链、数字技术与文化传播。', symbol: '01' },
+  { title: '跨学科团队', text: '由广东财经大学相关专业学生组成的创新实践团队，连接设计、管理、供应链、数字技术与文化传播。', symbol: '01' },
   { title: '非遗传承人顾问', text: '提供工艺指导、作品创作与内容校验，让数字表达建立在真实的工艺经验上。', symbol: '02' },
   { title: '学术与技术顾问', text: '连接数字化研究、AI 建模、AR 应用与高校资源，支持平台能力持续迭代。', symbol: '03' },
   { title: '行业与合作网络', text: '链接行业协会、政企、校园与社区，让非遗、科技、教育与社区形成协作生态。', symbol: '04' },
