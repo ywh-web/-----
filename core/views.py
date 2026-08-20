@@ -12,23 +12,16 @@ def backend_home(request):
     return redirect('/admin/')
 
 
-def _with_cors(response):
-    response['Access-Control-Allow-Origin'] = 'http://127.0.0.1:5173'
-    response['Access-Control-Allow-Methods'] = 'POST, OPTIONS'
-    response['Access-Control-Allow-Headers'] = 'Content-Type'
-    return response
-
-
 @csrf_exempt
 @require_http_methods(['POST', 'OPTIONS'])
 def contact_inquiry_create(request):
     if request.method == 'OPTIONS':
-        return _with_cors(JsonResponse({}, status=204))
+        return JsonResponse({}, status=204)
 
     try:
         payload = json.loads(request.body or '{}')
     except json.JSONDecodeError:
-        return _with_cors(JsonResponse({'message': '提交内容格式不正确。'}, status=400))
+        return JsonResponse({'message': '提交内容格式不正确。'}, status=400)
 
     name = str(payload.get('name', '')).strip()
     contact = str(payload.get('contact', '')).strip()
@@ -49,7 +42,7 @@ def contact_inquiry_create(request):
     if len(message) > 2000:
         errors['message'] = '合作留言不能超过 2000 个字符。'
     if errors:
-        return _with_cors(JsonResponse({'message': '请检查表单内容。', 'errors': errors}, status=400))
+        return JsonResponse({'message': '请检查表单内容。', 'errors': errors}, status=400)
 
     inquiry = ContactInquiry.objects.create(
         name=name,
@@ -57,7 +50,12 @@ def contact_inquiry_create(request):
         cooperation_type=cooperation_type,
         message=message,
     )
-    return _with_cors(JsonResponse({
+    return JsonResponse({
         'message': '合作意向已记录，感谢你关注潮州嵌瓷数字化传承。',
         'id': inquiry.id,
-    }, status=201))
+    }, status=201)
+
+
+@require_http_methods(['GET'])
+def health_check(request):
+    return JsonResponse({'status': 'ok'})
