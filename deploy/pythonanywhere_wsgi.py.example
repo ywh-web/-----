@@ -1,0 +1,26 @@
+"""PythonAnywhere WSGI configuration.
+
+Copy this file into PythonAnywhere's WSGI configuration editor and replace
+PROJECT_ROOT, DJANGO_SECRET_KEY, and DJANGO_ALLOWED_HOSTS with your values.
+"""
+
+import os
+import sys
+
+PROJECT_ROOT = '/home/YOUR_USERNAME/chaoyun-mall'
+sys.path.insert(0, PROJECT_ROOT)
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
+os.environ.setdefault('DJANGO_DEBUG', 'false')
+os.environ.setdefault('DJANGO_SECRET_KEY', 'replace-with-a-long-random-secret')
+os.environ.setdefault('DJANGO_ALLOWED_HOSTS', 'YOUR_USERNAME.pythonanywhere.com')
+os.environ.setdefault(
+    'CORS_ALLOWED_ORIGINS',
+    'https://sparkly-clafoutis-2d38af.netlify.app',
+)
+os.environ.setdefault(
+    'CSRF_TRUSTED_ORIGINS',
+    'https://sparkly-clafoutis-2d38af.netlify.app',
+)
+
+from config.wsgi import application
